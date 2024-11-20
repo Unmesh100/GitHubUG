@@ -1,0 +1,150 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Raleway:wght@400;600;800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* default: 225, 355,295 */
+  /* --hue-color: 5; 
+  --main-color: hsl(var(--hue-color), 72%, 50%); */
+
+  --hue-color: 210;
+  --main-color: hsl(var(--hue-color), 90%, 10%);
+  --secondary-color: hsl(var(--hue-color), 90%, 75%);
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: var(--font-poppins);
+}
+
+.navbar-bg-color {
+  background-color: var(--main-color) !important;
+  font-family: var(--font-poppins);
+  font-size: 18px;
+}
+
+.link-card-highlight {
+  color: black;
+  text-decoration: none;
+}
+.link-card-highlight:hover {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.btn-custom-color {
+  width: 100%;
+  outline: none;
+  padding: 0.3rem 1rem;
+  font-size: 1.25rem;
+  color: var(--main-color);
+  background-color: white;
+  border: 1px solid var(--main-color);
+}
+
+.btn-custom-color:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.github-button {
+  width: 100%;
+  outline: none;
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+  background-color: #21262d;
+  color: white;
+}
+.github-button:hover {
+  cursor: pointer;
+  color: #21262d;
+  background-color: white;
+  border: 1px solid #21262d;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+}
+
+.card-shadow {
+  margin: 1rem auto;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 10px 64px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  text-align: center;
+  width: 40%;
+  margin: 1rem auto;
+  border-radius: 50%;
+}
+
+.profile-github-button {
+  outline: none;
+  color: var(--main-color);
+  background-color: white;
+  border: 1px solid var(--main-color);
+}
+
+.profile-github-button:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.flex-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.github-activity-calender-container {
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .flex-buttons {
+    flex-direction: column;
+  }
+
+  .flex-buttons > button {
+    margin-bottom: 10px;
+  }
+}
+
+.badge {
+  border-radius: 50px;
+  padding: 0.3rem 0.8rem;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.link-hover {
+  color: #21262d;
+  text-decoration: none;
+}
+
+.link-hover:hover {
+  color: var(--main-color);
+  text-decoration: none;
+}
